@@ -7,4 +7,8 @@ RUN apt-get update && apt-get install -y \
   libreoffice \
   rake \
   ruby \
+  ruby-dev \
+  make \
+  g++ \
+  gcc \
   && rm -rf /var/lib/apt/lists/*
