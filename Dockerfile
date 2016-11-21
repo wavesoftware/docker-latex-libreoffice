@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER Krzysztof Suszyński <krzysztof.suszynski@wavesoftware.pl>
 
 RUN apt-get update && apt-get install -y \
@@ -11,4 +11,8 @@ RUN apt-get update && apt-get install -y \
   make \
   g++ \
   gcc \
+  python \
+  python-pip \
   && rm -rf /var/lib/apt/lists/*
+RUN pip install Pygments
+RUN gem install bundler
