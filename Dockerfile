@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
   make \
   g++ \
   gcc \
+  libffi-dev \
   python \
   python-pip \
   && rm -rf /var/lib/apt/lists/*
